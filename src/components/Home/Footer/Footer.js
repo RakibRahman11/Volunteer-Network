@@ -4,7 +4,7 @@ import logo from '../../../images/logos/Group 1329.png'
 
 const Footer = () => {
     return (
-        <div className="mt-5 bg-white border-top border-dark footer">
+        <div className="bg-white footer bg-color">
             <div className="pt-5 d-flex justify-content-between align-items-center">
                 <div>
                     <img className="footer-icon ps-5" src={logo} alt='' />
