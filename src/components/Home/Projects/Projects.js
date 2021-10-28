@@ -4,7 +4,7 @@ import Project from '../Project/Project';
 const Projects = () => {
     const [projects, setProjects] = useState([]);
     useEffect(() => {
-        fetch('/project.json')
+        fetch('https://still-sea-98860.herokuapp.com/projects')
             .then(response => response.json())
             .then(data => setProjects(data))
     })
@@ -13,7 +13,7 @@ const Projects = () => {
             <div className="container">
                 <div className="row">
                     {
-                        projects.map(project => <Project project={project}></Project>)
+                        projects.map(project => <Project key={project.id} project={project}></Project>)
                     }
                 </div>
             </div>
